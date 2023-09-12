@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Landing Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/45c1d0df26.js" crossorigin="anonymous"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Custom CSS styles */
+        body {
+            padding-top: 70px;
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-image: url('https://your-image-url.jpg');
+            background-size: cover;
+            height: 500px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button {
+            margin-top: 20px;
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .butn {
+            border-radius: 10px;
+            margin: 1rem 0 0.5rem;
+            position: relative;
+            left: 40%;
+        }
+
+        .product-image{
+            border-radius: 20px;
+        }
+        .hfont {
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Delicious Cakes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#cakes">Cakes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container text-center hfont">
+            <i class="fa-solid fa-cake-candles fa-2xl"></i>
+            <h1 class="display-4">Delicious Cakes</h1>
+            <p class="lead">Indulge in the heavenly taste of our cakes</p>
+            <a class="btn btn-primary btn-lg cta-button" href="#cakes">View Cakes</a>
+        </div>
+    </div>
+
+    <div class="container" id="cakes">
+        <h2 class="text-center">Our Cakes</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="assets/images/img 1.jpg" alt="Cake 1" class="product-image">
+                <button class="btn-primary butn text-center">Buy 10$</button>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/img 2.jpg" alt="Cake 2" class="product-image">
+                <button class="btn-primary butn text-center ">Buy 10$</button>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/img 3.jpg" alt="Cake 3" class="product-image">
+                <button class="btn-primary butn text-center">Buy 10$</button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec odio mauris. In non dolor sed urna
+                auctor tincidunt. Integer sit amet risus viverra, dapibus mauris ut, lacinia nisl. Nulla facilisi.
+                Suspendisse potenti. Suspendisse feugiat enim non ligula egestas, a auctor est pharetra. Donec cursus
+                lectus vel eros imperdiet, et placerat ante posuere. Proin pellentesque tincidunt purus, vel
+                sollicitudin urna dapibus sit amet. Vivamus non aliquam metus.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form action="/submit-order" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h4>Visit Us</h4>
+                    <p>Bethel Main Street<br>Addis Ababa, State, ZIP<br>Ethiopia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Delicious Cakes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
