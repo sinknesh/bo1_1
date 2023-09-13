@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "axios": "^1.5.0",
+    "body-parser": "^1.20.2",
+    "node-telegram-bot-api": "^0.63.0"
+  },
+  "name": "my-website",
+  "version": "1.0.0",
+  "main": "myFirst.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Fenan",
+  "license": "MIT",
+  "description": "modern site for cake ordering with bootstrap and telegram"
+}
